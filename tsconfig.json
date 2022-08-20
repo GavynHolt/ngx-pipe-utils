@@ -16,6 +16,12 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "pipe-utils": [
+        "dist/pipe-utils/pipe-utils",
+        "dist/pipe-utils"
+      ]
+    },
     "target": "es2017",
     "module": "es2020",
     "lib": [
