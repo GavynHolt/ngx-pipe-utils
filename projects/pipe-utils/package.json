@@ -1,6 +1,6 @@
 {
-  "name": "pipe-utils",
-  "version": "0.0.1",
+  "name": "ngx-pipe-utils",
+  "version": "0.0.0",
   "peerDependencies": {
     "@angular/common": "^13.1.0",
     "@angular/core": "^13.1.0"
