@@ -1,5 +1,5 @@
 import { MillisecondsToDurationPipe } from './milliseconds-to-duration.pipe';
-import moment from 'moment';
+import { Duration } from 'luxon';
 
 describe('MillisecondsToDurationPipe', () => {
   it('creates an instance', () => {
@@ -17,7 +17,7 @@ describe('MillisecondsToDurationPipe', () => {
 
   it('converts 3 weeks 4 days, 6 hours, 0 minutes and 15 seconds from ms to duration', () => {
     const pipe = new MillisecondsToDurationPipe();
-    const milliseconds = moment.duration({
+    const duration = Duration.fromObject({
       weeks: 3,
       days: 4,
       hours: 6,
@@ -25,8 +25,7 @@ describe('MillisecondsToDurationPipe', () => {
       seconds: 15,
     });
     const expected = '3w 4d 6h 15s';
-    const actual = pipe.transform(milliseconds.asMilliseconds());
+    const actual = pipe.transform(duration.toMillis());
     expect(actual).toBe(expected);
-
-  })
+  });
 });

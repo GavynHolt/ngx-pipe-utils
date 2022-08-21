@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import moment from 'moment';
+import { Duration } from 'luxon';
 
 @Pipe({
   name: 'millisecondsToDuration'
@@ -7,15 +7,25 @@ import moment from 'moment';
 export class MillisecondsToDurationPipe implements PipeTransform {
 
   transform(milliseconds: number): null | string {
-    const duration = moment.duration(milliseconds);
-    const seconds = duration.seconds();
-    const minutes = duration.minutes();
-    const hours = duration.hours();
-    const days = duration.days() - duration.weeks() * 7;
-    // MomentJS docs: weeks are counted as a subset of the days, and are not taken off the days count.
-    const weeks = duration.weeks();
-    const months = duration.months();
-    const years = duration.years();
+
+    const duration = Duration.fromObject({ 
+      milliseconds, 
+      seconds: 0, 
+      minutes: 0,
+      hours: 0,
+      days: 0,
+      weeks: 0, 
+      months: 0,
+      years: 0,
+    }).normalize();
+    
+    const seconds = duration.seconds;
+    const minutes = duration.minutes;
+    const hours = duration.hours;
+    const days = duration.days;
+    const weeks = duration.weeks;
+    const months = duration.months;
+    const years = duration.years;
 
     const retVal = [];
 
