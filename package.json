@@ -1,6 +1,11 @@
 {
   "name": "ngx-pipe-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "author": "Gavyn Holt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GavynHolt/ngx-pipe-utils"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
