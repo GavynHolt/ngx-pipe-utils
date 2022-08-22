@@ -12,7 +12,8 @@
     "build": "ng build",
     "build:prod": "ng build --configuration=production",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lint": "ng lint"
   },
   "dependencies": {
     "@angular/animations": "^14.1.3",
@@ -46,23 +47,5 @@
     "lint-staged": "^13.0.3",
     "ng-packagr": "^14.1.0",
     "typescript": "~4.7.4"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.js}": [
-      "prettier --write"
-    ],
-    "*.ts": [
-      "eslint",
-      "prettier --parser=typescript --write"
-    ],
-    "*.html": [
-      "prettier --write"
-    ],
-    "*.md": [
-      "prettier --write"
-    ]
   }
 }
