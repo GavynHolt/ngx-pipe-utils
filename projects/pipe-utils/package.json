@@ -1,11 +1,15 @@
 {
   "name": "ngx-pipe-utils",
-  "version": "0.0.3",
+  "version": "0.0.4",
+  "author": "Gavyn Holt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GavynHolt/ngx-pipe-utils"
+  },
   "peerDependencies": {
-    "@angular/common": "^13.1.0",
-    "@angular/core": "^13.1.0"
   },
   "dependencies": {
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "luxon": "^3.0.1"
   }
 }
