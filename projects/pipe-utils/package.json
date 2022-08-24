@@ -7,9 +7,9 @@
     "url": "https://github.com/GavynHolt/ngx-pipe-utils"
   },
   "peerDependencies": {
+    "luxon": "^3.0.1"
   },
   "dependencies": {
-    "tslib": "^2.3.0",
-    "luxon": "^3.0.1"
+    "tslib": "^2.3.0"
   }
 }
