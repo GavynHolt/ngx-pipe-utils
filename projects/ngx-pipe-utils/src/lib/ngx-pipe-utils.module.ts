@@ -7,4 +7,4 @@ import { MillisecondsToDurationPipe } from './milliseconds-to-duration.pipe';
   imports: [],
   exports: [MillisecondsToDurationPipe],
 })
-export class PipeUtilsModule {}
+export class NgxPipeUtilsModule {}
