@@ -17,9 +17,9 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
-      "pipe-utils": [
-        "dist/pipe-utils/pipe-utils",
-        "dist/pipe-utils"
+      "ngx-pipe-utils": [
+        "dist/ngx-pipe-utils/ngx-pipe-utils",
+        "dist/ngx-pipe-utils"
       ]
     },
     "target": "es2020",

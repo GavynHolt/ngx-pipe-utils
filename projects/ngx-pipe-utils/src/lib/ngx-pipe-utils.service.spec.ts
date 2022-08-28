@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { PipeUtilsService } from './pipe-utils.service';
+import { PipeUtilsService } from './ngx-pipe-utils.service';
 
 describe('PipeUtilsService', () => {
   let service: PipeUtilsService;

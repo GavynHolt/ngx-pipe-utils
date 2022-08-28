@@ -14,7 +14,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "publish": "npm install && cd projects/components && npm version patch && cd ../.. && npm run build && git commit -m bump projects/components/package.json && cd dist/components && npm publish"
+    "publish": "npm install && cd projects/ngx-pipe-utils && npm version patch && cd ../.. && npm run build && git commit -m bump projects/ngx-pipe-utils/package.json && cd dist/ngx-pipe-utils && npm publish"
   },
   "dependencies": {
     "@angular/animations": "^14.1.3",
